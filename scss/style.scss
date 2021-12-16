@@ -38,6 +38,14 @@ body {
         }
     }
 }
+#items{
+    .custom-btn{
+        @include custom-btn;
+        &:hover {
+            @include custom-btn-hover;
+        }
+    }
+}
 
 #header {
     .nav-link {
