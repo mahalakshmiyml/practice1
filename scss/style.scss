@@ -26,3 +26,17 @@ body {
         }
     }
 }
+#divider {
+    .divide {
+        border-bottom: 2px solid #bca95c; 
+    }
+}
+#footer{
+    .link {
+    color: #adadad;
+    text-decoration: none;
+    &:hover {
+        color: #d9d9d9;
+    }
+}
+}
