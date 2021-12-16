@@ -1,6 +1,18 @@
+@mixin custom-btn {
+    background-color: #2d231c;
+    border: solid 2px #bca95c;
+}
+
+@mixin custom-btn-hover {
+    background-color: #bca95c;
+    border: solid 2px #2d291c;
+}
+
 body {
     background-color: #191919;
 }
+
+
 
 #top-header {
     .link {
@@ -14,6 +26,15 @@ body {
         color: green;
         &:hover {
             color: #d9d9d9;
+        }
+    }
+}
+
+#about {
+    .custom-btn {
+        @include custom-btn;
+        &:hover {
+            @include custom-btn-hover;
         }
     }
 }
