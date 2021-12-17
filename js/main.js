@@ -3,7 +3,7 @@ function sendContact() {
     valid = validateContact();
 
 
-    $('#mail-stauts').html('<p class="text-center text-success"><strong>Please wait...</strong></p>');
+    $('#mail-status').html('<p class="text-center text-success"><strong>Please wait...</strong></p>');
 
     if(valid) {
         jQuery.ajax({
