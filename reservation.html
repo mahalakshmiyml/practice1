@@ -109,31 +109,66 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form class="bg-white rounded p-3">
+                    <div class="rounded p-3 custom">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name">
+                                    
+                                    <input type="text" class="form-control" id="name" placeholder="Name" name="name">
                                   </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="mb-3"> 
+                                    
+                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                                   </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone number" name="phone">
                                   </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    
+                                    <input type="text" class="form-control" id="headcount" placeholder="Head Count" name="headcount">
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    
+                                    <select class="form-select" id="table-number" placeholder="Message"name="table-number">
+                                        <option selected>Select Your Table</option>
+                                        <option value="Table-1">Table-1</option>
+                                        <option value="Table-2">Table-2</option>
+                                        <option value="Table-3">Table-3</option>
+                                        <option value="Table-4">Table-4</option>
+                                      </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Message" name="message"></textarea>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" onClick="sendContact();" class="btn btn-primary">Submit</button>
+
+                        <div id="mail-status">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
