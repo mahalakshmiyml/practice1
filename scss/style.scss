@@ -71,3 +71,26 @@ body {
     }
 }
 }
+#about-banner{
+    background-image: url("/images/about/about-baner.png");
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    height: 150px;
+    h2 {
+        color: #bca95c;
+    }
+}
+#about{
+    h2{
+        color: #bca95c;
+    }
+    p{
+        text-align: justify;
+    }
+}
+#gallery{
+    h1{
+        color:#bca95c
+    }
+}
